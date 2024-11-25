@@ -1,13 +1,18 @@
+import { BrowserRouter } from "react-router-dom"
+import Layout from "./components/Layout"
+import { ThemeProvider } from "./context/theme-provider"
 
 
 function App() {
 
   return (
-    <>
-      <div>
-        Hello
-      </div>
-    </>
+    <BrowserRouter>
+      <ThemeProvider defaultTheme="dark">
+        <Layout>
+
+        </Layout>
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
